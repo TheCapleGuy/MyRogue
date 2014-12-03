@@ -82,11 +82,14 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="source\CaveGenerator.cpp" />
     <ClCompile Include="source\MyRogue.cpp" />
+    <ClCompile Include="source\Singleton.cpp" />
     <ClCompile Include="source\stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\CaveGenerator.h" />
+    <ClInclude Include="include\Singleton.h" />
     <ClInclude Include="include\stdafx.h" />
     <ClInclude Include="include\targetver.h" />
   </ItemGroup>
