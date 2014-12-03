@@ -1,15 +1,30 @@
 #ifndef _CAVEGENERATOR_H_
 #define _CAVEGENERATOR_H_
-#include "Singleton.h"
+
 #include <vector>
+
+
 
 class Cells
 {
 public:
-	void InitCells();
+	Cells(){};
+	~Cells(){};
+	void SetRoomValues();
+	void InitCells(std::vector<Cells> roomVector);
+	int x, y, width, height, xEnd, yEnd;
+	bool isItUsed;
 
-protected:
-	int x, y, width, height;
 };
-std::vector<Cells> Rooms;
+
+class LevelGen
+{
+public:
+	LevelGen(){};
+	~LevelGen(){};
+	void PopulateRooms(std::vector<Cells>& roomVector);
+	int widthLimit, heightCounter, widthCounter;
+
+};
+
 #endif

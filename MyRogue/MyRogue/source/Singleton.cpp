@@ -3,11 +3,9 @@
 //Static Member
 Singleton* Singleton::instance = 0;
 
-
-
 Singleton::Singleton()
 {
-	dungeonWidth = 100, dungeonHeight = 100;
+	roomSpawnWidth = 50, roomSpawnHeight = 50;
 }
 Singleton::~Singleton()
 {
